@@ -1,16 +1,54 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+
+import "../styles/home.css";
+
+// Homepage information
+const profile = {
+  name: "Henry",
+  tagline: "Mechanical engineering student at MIT interested in robotics, design, and manufacturing.",
+  picture: "/profile.jpg",
+  resume: "/resume.pdf",
+  socials: [
+    {
+      label: "GitHub",
+      url: "https://github.com/henrydang7"
+    },
+    {
+      label: "LinkedIn",
+      url: "https://linkedin.com/in/henrydang7"
+    }
+  ]
+};
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Henry Dang Portfolio</title>
-	</head>
-	<body>
-		<h1>Big things to come! Stay tuned :)</h1>
-	</body>
-</html>
+<BaseLayout title="Henry | Portfolio">
+
+  <Hero
+    name={profile.name}
+    tagline={profile.tagline}
+    picture={profile.picture}
+    resume={profile.resume}
+    socials={profile.socials}
+  />
+
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>
+      Write a little bit about your background,
+      interests, and what you enjoy working on.
+    </p>
+  </section>
+
+  <section id="projects" class="content-section">
+    <h2>Projects</h2>
+    <p>Some of the projects I've worked on.</p>
+  </section>
+
+  <section id="blog" class="content-section">
+    <h2>Blog</h2>
+    <p>Some things I've written about.</p>
+  </section>
+
+</BaseLayout>
