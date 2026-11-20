@@ -8,11 +8,15 @@ import headshot from "../assets/headshot.jpg"
 
 /* Content */
 const heroSection = {
-  headshot: headshot,
-  bio: "Hi, welcome to a niche corner of the internet! My name is Henry, and I am a current undergrad at MIT studying mechanical engineering. I love making things when I'"
+  header: "About",
+  img: headshot
 }
 ---
 
 <BaseLayout title="Henry Dang | Mech E">
-  <HeroSection img={heroSection.headshot} bio={heroSection.bio}/>
+  <HeroSection header={heroSection.header} img={heroSection.img}>
+    <p>Hi, welcome to my niche corner of the internet! I'm Henry, a current mechanical engineering undergrad at MIT.</p>
+    <p>I love hands-on making when I have the time; though, that's not all what I do. What my major doesn't tell you is that I also enjoy working with computers, logic & architectures, and a bit of "practical-theory".</p>
+    <p>When I'm not in the shop, you can find me </p>
+  </HeroSection>
 </BaseLayout>

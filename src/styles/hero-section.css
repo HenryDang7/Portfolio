@@ -1,0 +1,19 @@
+/* Hero Heading */
+.hero-header {
+  margin: 1.5rem 0 1rem 0;
+}
+
+/* Hero Body */
+.hero-section p {
+  margin: 0 0 1rem 0;
+}
+
+/* Hero Image */
+.hero-image {
+  object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 8px;
+  float: right;
+  margin: 0 0 2rem 3rem;
+}

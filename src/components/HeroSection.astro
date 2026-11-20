@@ -1,11 +1,13 @@
 ---
 import {Image} from "astro:assets";
 
-const {bio, img} = Astro.props;
+import "../styles/hero-section.css";
+
+const {header, img} = Astro.props;
 ---
 
 <div class="hero-section">
 	<Image src={img} alt="" class="hero-image"/>
-	<h1>About</h1>
-	<p>{bio}</p>
+	<h1 class="hero-header">{header}</h1>
+	<slot/>
 </div>

@@ -1,34 +1,31 @@
-.site-home {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 5rem;
-}
-
-.site-header-links {
-	display: flex;
-	gap: 1rem;
-  text-decoration: none;
-}
-
-.site-nav {
-  display:flex;
+/* Site Header */
+.site-header {
+  display: flex;
   justify-content: space-between;
   place-items: center;
   height: 7rem;
-  text-decoration: none;
 }
 
-.site-nav a {
+.site-title {
+  color: var(--text);
+  font-weight: bold;
+  font-size: 5rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.external-links {
+  text-decoration: none;
+	display: flex;
+	gap: 1.5rem;
+  margin-left: 2.5rem;
+}
+
+.external-links a {
   text-decoration: none;
   font-weight: bold;
 }
 
-.hero-image{
-  width: 15rem;
-  height: 15rem;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-  float: right;
+.site-nav {
+  margin: 0 0 -1rem 0;
 }

@@ -1,9 +1,11 @@
 ---
+/* Components */
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+
+/* Styles */
 import "../styles/global.css";
 import "../styles/base-layout.css";
-
-import SiteHeader from "../components/SiteHeader.astro"
-import SiteFooter from "../components/SiteFooter.astro";
 
 const {title} = Astro.props;
 ---
@@ -19,7 +21,9 @@ const {title} = Astro.props;
   <body>
     <main>
       <SiteHeader></SiteHeader>
+
       <slot />
+
       <SiteFooter></SiteFooter>
     </main>
   </body>
