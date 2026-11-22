@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+
+import ProjectCard from "../../components/ProjectCard.astro";"../../components/ProjectCard.astro"
+
+import "../../styles/project-grid.css"
+
+import image from "../../assets/ares-beater-main.png";
+---
+
+<BaseLayout>
+	<div class="project-grid">
+		<ProjectCard img={image} title="test" description="test2" href="/" />
+		<ProjectCard img={image} title="test" description="test2" href="/" />
+		<ProjectCard img={image} title="test" description="test2" href="/" />
+		<ProjectCard img={image} title="test" description="test2" href="/" />
+	</div>
+</BaseLayout>

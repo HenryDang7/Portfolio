@@ -1,0 +1,13 @@
+---
+import {Image} from "astro:assets";
+
+import "../styles/project-card.css";
+
+const {img, title, description, href} = Astro.props;
+---
+
+<a class="project-card" href={href}>
+	<Image src={img}, alt={title}/>
+	<h1>{title}</h1>
+	<p>{description}</p>
+</a>
